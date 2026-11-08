@@ -36,3 +36,22 @@
     }
   ]
 }
+
+---
+
+### 2. Додавання нового медикаменту
+
+- **HTTP Метод:** `POST`
+- **URL:** `/medicines`
+- **Заголовки:**
+  - `Content-Type: application/json`
+  - `Authorization: Bearer <your_token>`
+
+#### Приклад тіла запиту (Request Body):
+```json
+{
+  "name": "Омега-3",
+  "dosage": "1 капсула",
+  "times": ["09:00"],
+  "total_pills": 30
+}
